@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b5f52" />
+  <title>Banco de questões</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-module="banco">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">Questões</div>
+      <div class="nav-links">
+        <a class="chip" href="index.html">Início</a>
+        <a class="chip" href="cheque-rapido.html">Cheque</a>
+        <a class="chip active" href="banco-questoes.html">Questões</a>
+        <a class="chip" href="99-simulacao-prova.html">Simulado</a>
+      </div>
+    </div>
+
+    <div class="section-label">Treino por tema</div>
+    <h1>Banco de questões</h1>
+    <p class="lead">Curadoria das provas da amiga (menos óbvias, sem repetir o mesmo stem) + bloco IU/PERFECT dos slides. Toque na alternativa; a lógica abre em seguida.</p>
+
+    <div class="card meta banco-toolbar" data-no-gloss>
+      <div class="banco-score">
+        <strong data-banco-score>0 / 0</strong>
+        <span class="small muted">acertos nesta sessão · tema atual</span>
+      </div>
+      <div class="btn-row" style="margin-top:.65rem">
+        <button type="button" class="btn secondary" data-banco-shuffle>Embaralhar este tema</button>
+        <button type="button" class="btn secondary" data-banco-reset-score>Zerar placar</button>
+      </div>
+      <p class="small muted" style="margin:.65rem 0 0" data-banco-count>Carregando…</p>
+    </div>
+
+    <div class="filter-bar" data-banco-filters data-no-gloss role="tablist" aria-label="Filtrar por tema">
+      <button type="button" class="chip filter-chip active" data-banco-tag="all">Todos</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="iu">IU</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="perfect">PERFECT</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="pop">POP</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="if">IF</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="gestacao">Gestação</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="sexo">Sexualidade</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="prostata">Próstata</button>
+      <button type="button" class="chip filter-chip" data-banco-tag="revisao">Revisão</button>
+    </div>
+
+    <div data-banco-mount></div>
+
+    <div class="sticky-actions btn-row">
+      <a class="btn secondary" href="99-simulacao-prova.html">Ir ao simulado 10+2</a>
+      <a class="btn secondary" href="index.html">Voltar ao início</a>
+    </div>
+  </div>
+  <script src="assets/banco-questoes-data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

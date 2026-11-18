@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b5f52" />
+  <title>99 · Simulado 10 + 2</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body data-module="99">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">Simulado</div>
+      <div class="nav-links">
+        <a class="chip" href="index.html">Início</a>
+        <a class="chip" href="cheque-rapido.html">Cheque</a>
+        <a class="chip" href="banco-questoes.html">Questões</a>
+        <a class="chip active" href="99-simulacao-prova.html">Prova</a>
+      </div>
+    </div>
+
+    <div class="section-label">Fechamento</div>
+    <h1>Simulado — 10 + 2</h1>
+    <p class="lead">Mesmo estilo dos módulos: mapa dos eixos, casos com alternativas e flashcards das discursivas. A cada abertura (ou “Nova prova”) os enunciados e a ordem mudam — o conteúdo é o mesmo, o jeito de perguntar não.</p>
+
+    <div class="mmap" data-mmap>
+      <p class="mmap-hint">Mapa da prova · toque para abrir</p>
+      <div class="mmap-board">
+        <button type="button" class="mmap-core" data-node="prova">O que cai</button>
+        <div class="mmap-branches">
+          <button type="button" class="mmap-node warm" data-node="iu">IU / recursos</button>
+          <button type="button" class="mmap-node" data-node="aval">PERFECT / TMAP</button>
+          <button type="button" class="mmap-node" data-node="pop">POP / IF</button>
+          <button type="button" class="mmap-node warm" data-node="disc">Discursiva</button>
+          <button type="button" class="mmap-node" data-node="homem">Homem / PO</button>
+        </div>
+
+        <div class="mmap-panel" data-panel="prova">
+          <h3>Formato</h3>
+          <ul>
+            <li>10 objetivas + 2 discursivas</li>
+            <li>Peso alto: tratamentos e casos (IUE × IUU)</li>
+            <li>Lógica &gt; decorar lista solta</li>
+          </ul>
+        </div>
+        <div class="mmap-panel" data-panel="iu">
+          <h3>IU — eixo núcleo</h3>
+          <ul>
+            <li>IUE → TMAP/EPP + <strong>Knack</strong></li>
+            <li>IUU → comportamento + <strong>Mahony</strong> ± tibial 10 Hz / eletro &lt;10 Hz</li>
+            <li>Eletro II ~50 Hz · I &lt;30 Hz · confirma tibial no <strong>hálux</strong></li>
+          </ul>
+        </div>
+        <div class="mmap-panel" data-panel="aval">
+          <h3>Avaliação</h3>
+          <ul>
+            <li>New PERFECT: Elevation / Co-contraction / Timed</li>
+            <li>Oxford, apneia/acessórios, diário miccional</li>
+            <li>Cone só após aprender a contrair</li>
+          </ul>
+        </div>
+        <div class="mmap-panel" data-panel="pop">
+          <h3>POP · IF · gestação</h3>
+          <ul>
+            <li>POP-Q 0–4 · FT forte em I–II</li>
+            <li>Puborretal relaxa na defecação</li>
+            <li>Diástase &gt;3 cm (critério da aula)</li>
+          </ul>
+        </div>
+        <div class="mmap-panel" data-panel="disc">
+          <h3>Roteiro discursiva</h3>
+          <ul>
+            <li><strong>HD</strong> → avaliação → conduta → orientações</li>
+            <li>Cite manobra-chave (Knack / Mahony)</li>
+            <li>Diga o que <em>não</em> fazer</li>
+          </ul>
+        </div>
+        <div class="mmap-panel" data-panel="homem">
+          <h3>Homem / cirurgia</h3>
+          <ul>
+            <li>IU pós-PR 8–77% · classificar tipo</li>
+            <li>DE ↔ nervos cavernosos</li>
+            <li>PO: respiratório + marcha; overflow = estenose?</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="compare">
+      <div class="tile slow">
+        <div class="eyebrow">Objetiva</div>
+        <h3>~2 min</h3>
+        <ul>
+          <li>Leia o gatilho clínico</li>
+          <li>Elimine absurdo</li>
+          <li>Ligue recurso ↔ tipo de perda</li>
+        </ul>
+      </div>
+      <div class="tile fast">
+        <div class="eyebrow">Discursiva</div>
+        <h3>~10 min</h3>
+        <ul>
+          <li>Marque dados do caso</li>
+          <li>HD + avaliação + plano</li>
+          <li>Feche com manutenção / CI</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card meta">
+      <div class="btn-row timer-row">
+        <div>
+          <div class="small muted">Timer opcional (40 min)</div>
+          <div class="timer" data-timer data-seconds="2400">40:00</div>
+        </div>
+        <button type="button" class="btn secondary" data-timer-start>Iniciar timer</button>
+      </div>
+    </div>
+
+    <div class="btn-row" style="margin:0 0 .85rem;align-items:center;justify-content:space-between;gap:.65rem;flex-wrap:wrap;">
+      <h2 style="margin:0">Casos objetivos</h2>
+      <button type="button" class="btn secondary" data-reshuffle-quiz>Nova prova</button>
+    </div>
+    <p class="small muted">Toque na alternativa. Ordem, enunciado e alternativas mudam a cada sorteio.</p>
+    <div data-quiz-mount></div>
+
+    <h2>Discursivas · flashcards de caso</h2>
+    <p class="small muted">Pense a resposta, depois toque para ver o modelo. O caso também varia.</p>
+    <div class="deck" data-disc-mount></div>
+
+    <div class="card checklist" data-checklist>
+      <label><input type="checkbox" data-id="1" /> Abri os nós do mapa da prova</label>
+      <label><input type="checkbox" data-id="2" /> Respondi as 10 objetivas sem olhar a lógica antes</label>
+      <label><input type="checkbox" data-id="3" /> Escrevi mentalmente as 2 discursivas (HD → plano)</label>
+      <label><input type="checkbox" data-id="4" /> Revisei Knack × Mahony e eletro &lt;10 Hz vs 50 Hz</label>
+    </div>
+
+    <div class="sticky-actions btn-row">
+      <button type="button" class="btn" data-mark-done>Marcar simulado como feito</button>
+      <a class="btn secondary" href="index.html">Voltar ao início</a>
+    </div>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
